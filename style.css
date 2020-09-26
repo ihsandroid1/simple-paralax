@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.wrapper-satu,
+.wrapper-dua,
+.wrapper-tiga,
+.wrapper-empat {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+      fixed = parallax
+      scroll = normal
+    */
+  background-attachment: fixed;
+}
+
+.wrapper-satu {
+  background-image: url("../img/image1.jpg");
+  min-height: 100%;
+}
+
+.wrapper-dua {
+  background-image: url("../img/image2.jpg");
+  min-height: 400px;
+}
+
+.wrapper-tiga {
+  background-image: url("../img/image3.jpg");
+  min-height: 400px;
+}
+
+.wrapper-empat{
+  background-image: url("../img/image1.jpg");
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.teks-kotak {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.teks-kotak .kotak-hitam {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.teks-kotak .kotak-hitam.trans {
+  background-color: transparent;
+}
+
+@media (max-width: 670px) {
+  .wrapper-satu,
+  .wrapper-dua,
+  .wrapper-tiga {
+    background-attachment: scroll;
+  }
+}
